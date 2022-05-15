@@ -56,7 +56,7 @@ gem "bootsnap", require: false
 gem 'bulma-rails', '~> 0.9.3'
 gem 'simple_form', '~> 5.1'
 gem 'gravatar_image_tag', '~> 1.2'
-gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'devise'
 gem 'jquery-rails'
 
 group :development, :test do

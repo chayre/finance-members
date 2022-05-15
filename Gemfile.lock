@@ -285,7 +285,7 @@ DEPENDENCIES
   bulma-rails (~> 0.9.3)
   capybara
   debug
-  devise (~> 4.8, >= 4.8.1)
+  devise
   gravatar_image_tag (~> 1.2)
   guard (~> 2.14)
   guard-livereload (~> 2.5, >= 2.5.2)
