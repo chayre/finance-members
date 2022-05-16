@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
     # GET /articles or /articles.json
     def index
       @articles = Article.all.order("created_at DESC")
+      @article = Article.new
     end
   
     # GET /articles/1 or /articles/1.json
@@ -12,18 +13,18 @@ class ArticlesController < ApplicationController
       @article = Article.find(params[:id])
     end
   
-    # GET /articles/new
-    def new
-        @article = Article.new
-    end
-  
-    # GET /articles/1/edit
-    def edit
-    end
-  
-    # POST /articles or /articles.json
-    def create
-      @article = Article.new(article_params)
+   # GET /articles/new
+   def new
+    @article = current_user.articles.build
+  end
+
+  # GET /articles/1/edit
+  def edit
+  end
+
+  # POST /articles or /articles.json
+  def create
+    @article = current_user.articles.build(article_params)
       
       respond_to do |format|
         if @article.save
@@ -63,11 +64,11 @@ class ArticlesController < ApplicationController
     
       # Use callbacks to share common setup or constraints between actions.
       def set_article
-        @article = article.find(params[:id])
+        @article = Article.find(params[:id])
       end
   
       # Only allow a list of trusted parameters through.
       def article_params
-        params.require(:article).permit(:article)
+        params.require(:article).permit(:body, :title)
       end
   end
