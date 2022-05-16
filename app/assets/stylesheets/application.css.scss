@@ -14,6 +14,10 @@ $navbar-dropdown-background-color: white;
 
 @import "bulma";
 
+.title :hover{
+    color: #9A8C98 !important;
+}
+
 //background
 body {
 	background-color: #F2E9E4;
