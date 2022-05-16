@@ -1,5 +1,7 @@
 $blue: #284B63;
+$gray: #D9D9D9;
 $info: #22223B;
+$dblue: #353535;
 $navbar-background-color: $blue;
 $navbar-item-hover-background-color: $blue;
 $navbar-item-color: white;
@@ -26,9 +28,16 @@ html {
 	color: $navbar-item-color;
 }
 
+// round images
+.image {
+	border-radius: 50%;
+	img {
+		border-radius: 50%;
+	}
+}
 //Form text color
 .label, .is-2, .is-5 {
-	color: white !important;
+	color: $dblue !important;
 }
 
 //remove margin underneath flash notifications
@@ -56,6 +65,6 @@ form abbr[title] {
 
 //make footer smaller
 .bottom {
-	background-color: $purple;
+	background-color: $gray;
 }
 
