@@ -1,4 +1,4 @@
-
+$purple: #C9ADA7;
 $info: #22223B;
 $info-invert: #F2E9E4;
 $navbar-burger-color: #F2E9E4;
@@ -54,5 +54,10 @@ form abbr[title] {
 .notification {
 	border-radius: 0% !important;
 	height: 1rem;
+}
+
+//make footer smaller
+.bottom{
+	background-color: $purple;
 }
 
