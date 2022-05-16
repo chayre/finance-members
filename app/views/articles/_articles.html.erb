@@ -27,7 +27,6 @@
                     <p><%= article.title %></p>
                     <p><%= article.body %></p>
                 </div>
-          <% if user_signed_in? && current_user.id == article.user_id %>
                 <nav class="level">
                     <div class="level-left is-mobile">
                         <%= link_to article, class: "level-item" do %>
@@ -41,6 +40,7 @@
                         <% end %>
                     </div>
                 </nav>
+                <% if user_signed_in? && current_user.id == article.user_id %>
           <% end %>
             </div>
         </article>

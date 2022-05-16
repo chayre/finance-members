@@ -18,6 +18,14 @@ $navbar-dropdown-background-color: white;
     color: #9A8C98 !important;
 }
 
+// round images
+.image {
+	border-radius: 50%;
+	img {
+		border-radius: 50%;
+	}
+}
+
 //background
 html {
 	background-color: $info-invert;
@@ -57,7 +65,12 @@ form abbr[title] {
 }
 
 //make footer smaller
-.bottom{
+.bottom {
 	background-color: $purple;
 }
 
+//icon color
+.media {
+	background-color: $info;
+	color: $info-invert;
+}
