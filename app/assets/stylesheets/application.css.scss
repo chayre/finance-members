@@ -1,13 +1,11 @@
-$purple: #C9ADA7;
+$blue: #284B63;
 $info: #22223B;
-$info-invert: #F2E9E4;
-$navbar-burger-color: #F2E9E4;
-$navbar-background-color: #22223B;
-$navbar-item-hover-background-color: #22223B;
-$navbar-item-color: #F2E9E4;
-$navbar-dropdown-arrow: #F2E9E4;
-$navbar-tab-active-color: #F2E9E4;
-$navbar-tab-active-background-color: #22223B;
+$navbar-background-color: $blue;
+$navbar-item-hover-background-color: $blue;
+$navbar-item-color: white;
+$navbar-dropdown-arrow: $blue;
+$navbar-tab-active-color: $blue;
+$navbar-tab-active-background-color: $blue;
 $navbar-dropdown-background-color: white;
 
 
@@ -15,15 +13,7 @@ $navbar-dropdown-background-color: white;
 
 //Hover-over color for title
 .title :hover{
-    color: #9A8C98 !important;
-}
-
-// round images
-.image {
-	border-radius: 50%;
-	img {
-		border-radius: 50%;
-	}
+    color: #D9D9D9 !important;
 }
 
 //background
@@ -38,7 +28,7 @@ html {
 
 //Form text color
 .label, .is-2, .is-5 {
-	color: $info !important;
+	color: white !important;
 }
 
 //remove margin underneath flash notifications
@@ -69,8 +59,3 @@ form abbr[title] {
 	background-color: $purple;
 }
 
-//icon color
-.media {
-	background-color: $info;
-	color: $info-invert;
-}
