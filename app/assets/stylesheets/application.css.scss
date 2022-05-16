@@ -18,13 +18,20 @@ $navbar-dropdown-background-color: white;
 }
 
 //background
-body {
-	background-color: #F2E9E4;
-	height: 100vh;
-  }
+html {
+	background-color: $info-invert;
+}
 
 .tan {
 	color: $navbar-item-color;
+}
+
+.is-2, .is-5 {
+	color: $info !important;
+}
+
+.label {
+	color: $info !important;
 }
 
 //remove margin underneath flash notifications
