@@ -13,6 +13,7 @@ $navbar-dropdown-background-color: white;
 
 @import "bulma";
 
+//Hover-over color for title
 .title :hover{
     color: #9A8C98 !important;
 }
@@ -22,15 +23,13 @@ html {
 	background-color: $info-invert;
 }
 
+//Default color of title
 .tan {
 	color: $navbar-item-color;
 }
 
-.is-2, .is-5 {
-	color: $info !important;
-}
-
-.label {
+//Form text color
+.label, .is-2, .is-5 {
 	color: $info !important;
 }
 
