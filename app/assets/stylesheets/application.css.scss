@@ -1,12 +1,27 @@
-// import bulma 
+
+$info: #22223B;
+$info-invert: #F2E9E4;
+$navbar-burger-color: #F2E9E4;
+$navbar-background-color: #22223B;
+$navbar-item-hover-background-color: #22223B;
+$navbar-item-hover-color: red;
+$navbar-item-color: #F2E9E4;
+$navbar-dropdown-arrow: #F2E9E4;
+$navbar-tab-active-color: #F2E9E4;
+$navbar-tab-active-background-color: #22223B;
+$navbar-dropdown-background-color: white;
+
+
 @import "bulma";
 
-// round images
-.image {
-	border-radius: 50%;
-	img {
-		border-radius: 50%;
-	}
+//background
+body {
+	background-color: #F2E9E4;
+	height: 100vh;
+  }
+
+.tan {
+	color: $navbar-item-color;
 }
 
 //remove margin underneath flash notifications
@@ -31,3 +46,4 @@ form abbr[title] {
 	border-radius: 0% !important;
 	height: 1rem;
 }
+

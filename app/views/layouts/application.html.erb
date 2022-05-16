@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/flatly/bulmaswatch.min.css">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   <body>
@@ -27,7 +28,7 @@
       <div class="navbar-brand">
         <div class="navbar-item">
           <h1 class="title is-5">
-            <%= link_to 'Finance Site', root_path, class: "has-text-white" %>
+            <%= link_to 'Finance Site', root_path, class: "tan" %>
           </h1>
         </div>
         <div class="navbar-burger burger" data-target="navbarExample">
